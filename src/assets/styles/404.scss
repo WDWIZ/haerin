@@ -1,0 +1,11 @@
+@use "./utils/variables.scss" as *;
+
+#msg404{
+    height: 80px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 80px;
+}

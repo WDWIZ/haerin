@@ -1,0 +1,25 @@
+@use "./assets/styles/utils/variables.scss" as *;
+
+@font-face{
+    font-family: 'GMarketSansMedium';
+    src: url('../public/fonts/GmarketSansTTFMedium.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}

@@ -1,0 +1,61 @@
+@use "./utils/variables.scss" as *;
+
+#home{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    svg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        text{
+            dominant-baseline: middle;
+        }
+
+        .center{
+            .title{
+                font-size: 250px;
+                font-family: "Times New Roman";
+            }
+
+            .circle{
+                fill: transparent;
+                stroke: #FFBD4A;
+                stroke-width: 30;
+            }
+        }
+
+        .swingByWrap{
+            .swingBy{
+                text tspan.sub{
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .objectTrack{
+            stroke: transparent;
+            stroke-width: 2px;
+            fill: transparent;
+        }
+    }
+
+    button{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background: #0082FC;
+        cursor: pointer;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        &.connected{
+            background: #54BAB9;
+        }
+    }
+}
