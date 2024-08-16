@@ -79,7 +79,10 @@ function Home(){
 
                 const value = event.target.value;
                 const stringValue = new TextDecoder().decode(value);
-                const stg = parseInt(stringValue);
+                let stg = parseInt(stringValue);
+
+                stg += 20;
+                stg %= CircleSTAGECOUNT;
                 
                 app.move(stg, stage < stg);
 

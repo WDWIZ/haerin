@@ -4,13 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/logo.png" />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" sizes="180x180" />
+    <link rel="mask-icon" href="/mask-icon.svg" color="#FFFFFF">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div id="main"></div>    
     <script type="module" src="/src/main.jsx"></script>
 
-    <script>
+    <script type="module">
+        import { registerSW } from 'virtual:pwa-register';
+
         if ("serviceWorker" in navigator) {
           // Register a service worker hosted at the root of the
           // site using the default scope.
