@@ -9,7 +9,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest: {
         "name": "TCA Cycle",
-        "short_name": "vite-pwa",
+        "short_name": "TCA Cycle",
         "start_url": "/",
         "display": "fullscreen",
         "background_color": "#ffffff",

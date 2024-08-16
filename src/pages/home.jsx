@@ -45,25 +45,6 @@ function Home(){
         app.resize(stageWidth, stageHeight);
     }
 
-    async function move(){
-        stage++;
-
-        stage %= CircleSTAGECOUNT;
-
-        app.move(stage, true);
-        setSStage(stage);
-    }
-
-    async function back(){
-        stage--;
-
-        stage += 20;
-        stage %= CircleSTAGECOUNT;
-
-        app.move(stage, false);
-        setSStage(stage);
-    }
-
     async function bluetooth(){
         try{
             const device = await navigator.bluetooth.requestDevice({ filters });
@@ -83,8 +64,10 @@ function Home(){
 
                 stg += 20;
                 stg %= CircleSTAGECOUNT;
+
+                let cw = stage < stg || stg == 0;
                 
-                app.move(stg, stage < stg);
+                app.move(stg, cw);
 
                 stage = stg;
                 setSStage(stg);
