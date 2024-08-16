@@ -65,7 +65,10 @@ function Home(){
                 stg += 20;
                 stg %= CircleSTAGECOUNT;
 
-                let cw = stage < stg || stg == 0;
+                let cw = stg > stage;
+
+                if (!cw && (stg == 0 && stage == 19)) cw = true;
+                else if (cw && (stg == 19 && stage == 0)) cw = false;
                 
                 app.move(stg, cw);
 
@@ -157,6 +160,8 @@ function Home(){
             <button type="button" className="bluetooth" onClick={bluetooth} ref={btnRef}>
                 <img src="/bluetooth.png" />
             </button>
+
+            <h1 className="count">{sStage}</h1>
         </div>
         </>
     )

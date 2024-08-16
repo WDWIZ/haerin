@@ -1577,6 +1577,15 @@ export function Scenario(){
                         sub2: 'NADH + H<tspan dy="-10" class="sub">+</tspan>',
                         noAnime: true
                     }
+                ],
+                texts: [
+                    {
+                        id: 0,
+                        R: R + 500,
+                        t: 2 * Math.PI / 20 * 15.25,
+                        text: "탈수소효소",
+                        noAnime: true
+                    }
                 ]
             }
         ]

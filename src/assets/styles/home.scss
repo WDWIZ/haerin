@@ -58,4 +58,13 @@
             background: #54BAB9;
         }
     }
+
+    .count{
+        width: max-content;
+        height: 80px;
+        position: absolute;
+        left: 120px;
+        line-height: 80px;
+        text-align: center;
+    }
 }
